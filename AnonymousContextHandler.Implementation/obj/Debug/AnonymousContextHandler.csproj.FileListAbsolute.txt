@@ -1,0 +1,14 @@
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\bin\Debug\AnonymousContextHandler.dll.config
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\bin\Debug\AnonymousContextHandler.dll
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\bin\Debug\AnonymousContextHandler.pdb
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\bin\Debug\AutoMapper.dll
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\bin\Debug\EntityFramework.dll
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\bin\Debug\AutoMapper.xml
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\bin\Debug\EntityFramework.xml
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\obj\Debug\AnonymousContextHandler.dll
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\obj\Debug\AnonymousContextHandler.pdb
+C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\obj\Debug\AnonymousContextHandler.csprojResolveAssemblyReference.cache
