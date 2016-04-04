@@ -25,9 +25,7 @@ namespace AnonymousContextHandler.ContextHandlers
             CheckIdHolderInitialize();
 
             var id = 1;
-            var latestModel = List(query => query.OrderByDescending(x => IdHolder.Compile()
-                .Invoke(model)))
-                .FirstOrDefault();
+            var latestModel = List(query => query.Where(x => true)).ToList().LastOrDefault();
             if (latestModel != null)
                 id = IdHolder.Compile()
                     .Invoke(latestModel) + 1;

@@ -12,3 +12,17 @@ C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\Anon
 C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\obj\Debug\AnonymousContextHandler.dll
 C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\obj\Debug\AnonymousContextHandler.pdb
 C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\obj\Debug\AnonymousContextHandler.csprojResolveAssemblyReference.cache
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Debug\AnonymousContextHandler.dll.config
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Debug\AnonymousContextHandler.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Debug\AnonymousContextHandler.pdb
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Debug\AutoMapper.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Debug\EntityFramework.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Debug\EntityFramework.SqlServer.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Debug\Newtonsoft.Json.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Debug\AutoMapper.xml
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Debug\EntityFramework.xml
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Debug\EntityFramework.SqlServer.xml
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Debug\Newtonsoft.Json.xml
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\obj\Debug\AnonymousContextHandler.csprojResolveAssemblyReference.cache
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\obj\Debug\AnonymousContextHandler.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\obj\Debug\AnonymousContextHandler.pdb

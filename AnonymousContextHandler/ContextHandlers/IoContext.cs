@@ -48,13 +48,19 @@ namespace AnonymousContextHandler.ContextHandlers
         {
             CheckIdHolderInitialize();
 
-            var id = 1;
-            var latestModel = List(query => query.OrderByDescending(x => IdHolder.Compile()
-                .Invoke(model)))
-                .FirstOrDefault();
-            if (latestModel != null)
+            var lastModel = List(query => query.Where(x=> true)).ToList().LastOrDefault();
+            var id = 0;
+            if (lastModel == null)
+            {
+                 id = 1;
+            }
+            else
+            {
                 id = IdHolder.Compile()
-                    .Invoke(latestModel) + 1;
+                    .Invoke(lastModel) + 1;
+            }
+
+
             model.SetPropertyValue(IdHolder, id);
             _list.Add(model);
             Save();

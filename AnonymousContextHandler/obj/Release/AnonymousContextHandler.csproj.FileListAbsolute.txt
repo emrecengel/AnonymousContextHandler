@@ -12,3 +12,17 @@ C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\Anon
 C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\obj\Release\AnonymousContextHandler.dll
 C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\obj\Release\AnonymousContextHandler.pdb
 C:\Users\Emre\Documents\Visual Studio 2015\Projects\AnonymousContextHandler\AnonymousContextHandler.Implementation\obj\Release\AnonymousContextHandler.csprojResolveAssemblyReference.cache
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Release\AnonymousContextHandler.dll.config
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Release\AnonymousContextHandler.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Release\AnonymousContextHandler.pdb
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Release\AutoMapper.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Release\EntityFramework.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Release\EntityFramework.SqlServer.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Release\Newtonsoft.Json.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Release\AutoMapper.xml
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Release\EntityFramework.xml
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Release\EntityFramework.SqlServer.xml
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\bin\Release\Newtonsoft.Json.xml
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\obj\Release\AnonymousContextHandler.csprojResolveAssemblyReference.cache
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\obj\Release\AnonymousContextHandler.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler\obj\Release\AnonymousContextHandler.pdb

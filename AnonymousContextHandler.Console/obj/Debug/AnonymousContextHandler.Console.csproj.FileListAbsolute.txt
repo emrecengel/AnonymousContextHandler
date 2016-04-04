@@ -1,0 +1,8 @@
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler.Console\bin\Debug\AnonymousContextHandler.Console.exe.config
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler.Console\bin\Debug\AnonymousContextHandler.Console.exe
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler.Console\bin\Debug\AnonymousContextHandler.Console.pdb
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler.Console\bin\Debug\AnonymousContextHandler.dll
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler.Console\bin\Debug\AnonymousContextHandler.pdb
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler.Console\obj\Debug\AnonymousContextHandler.Console.csprojResolveAssemblyReference.cache
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler.Console\obj\Debug\AnonymousContextHandler.Console.exe
+D:\Repositories\AnonymousContextHandler\AnonymousContextHandler.Console\obj\Debug\AnonymousContextHandler.Console.pdb
