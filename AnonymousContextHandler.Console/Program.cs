@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Configuration;
 using System.Linq;
-using Test.Console;
 
 namespace AnonymousContextHandler.Console
 {
@@ -8,15 +8,22 @@ namespace AnonymousContextHandler.Console
     {
         static void Main(string[] args)
         {
-            var modelRepository = AnonymousContext.IoModelRepository<Transaction>(x => x.Id, "C:/temp/ComwebTest/", Guid.NewGuid()
-                     .ToString());
-            for (int i = 0; i < 10; i++)
-            {
-                modelRepository.Add(new Transaction(i.ToString(), 10 * i, 10, DateTime.Now));
-                System.Console.Clear();
-                System.Console.WriteLine(string.Join(Environment.NewLine,modelRepository.List(query => query.Where(x => true)).Select(x => string.Format("{0} | {1}", x.Id, x.Description))));
-            }
 
+            // var guid = "a80c85b0-0df2-48a4-b400-8ae82405b9cd";
+            var guid = Guid.NewGuid().ToString();
+            var modelRepository = AnonymousContext.AzureTableRepository<Transaction>(x => x.Id, ConfigurationSettings.AppSettings.Get("StorageConnectionString"), guid);
+
+
+/*
+
+            for (int i = 0; i < 15; i++)
+            {
+                if (i != 10)
+                    modelRepository.Add(new Transaction(i.ToString(), 10 * i, 10, DateTime.Now));
+
+            }
+*/
+            var tt = modelRepository.List(query => query.Where(x => true));
         }
     }
 }

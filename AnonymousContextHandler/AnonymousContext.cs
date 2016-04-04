@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 using AnonymousContextHandler.Root;
+using Microsoft.WindowsAzure.Storage.Table;
 
 namespace AnonymousContextHandler
 {
@@ -41,5 +42,8 @@ namespace AnonymousContextHandler
 
         public static IModelRepository<T> MemoryRepository<T>(Expression<Func<T, int>> idHolder) where T : class
             => ContextHandler.MemoryRepository(idHolder);
+
+        public static IModelRepository<T> AzureTableRepository<T>(Expression<Func<T, int>> idHolder, string connectionString, string uniqueIdentifier) where T : TableEntity, new()
+            => ContextHandler.AzureTableRepository(idHolder, connectionString, uniqueIdentifier);
     }
 }

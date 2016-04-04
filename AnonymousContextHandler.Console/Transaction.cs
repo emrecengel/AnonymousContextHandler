@@ -1,8 +1,9 @@
 ﻿using System;
+using Microsoft.WindowsAzure.Storage.Table;
 
 namespace AnonymousContextHandler.Console
 {
-    public class Transaction 
+    public class Transaction :TableEntity
     {
         public Transaction()
         {

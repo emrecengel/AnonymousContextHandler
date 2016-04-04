@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq.Expressions;
+using Microsoft.WindowsAzure.Storage.Table;
 
 namespace AnonymousContextHandler.Root
 {
@@ -22,5 +23,6 @@ namespace AnonymousContextHandler.Root
             string uniqueIdentifier, string connectionString) where T : class;*/
 
         IModelRepository<T> MemoryRepository<T>(Expression<Func<T, int>> idHolder) where T : class;
+        IModelRepository<T> AzureTableRepository<T>(Expression<Func<T, int>> idHolder, string connectionString, string uniqueIdentifier) where T : TableEntity, new();
     }
 }
