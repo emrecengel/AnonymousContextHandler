@@ -43,7 +43,7 @@ namespace AnonymousContextHandler
         public static IModelRepository<T> MemoryRepository<T>(Expression<Func<T, int>> idHolder) where T : class
             => ContextHandler.MemoryRepository(idHolder);
 
-        public static IModelRepository<T> AzureTableRepository<T>(Expression<Func<T, int>> idHolder, string connectionString, string uniqueIdentifier) where T : TableEntity, new()
-            => ContextHandler.AzureTableRepository(idHolder, connectionString, uniqueIdentifier);
+       /* public static IModelRepository<T> AzureTableRepository<T>(Expression<Func<T, int>> idHolder, string connectionString, string uniqueIdentifier) where T : TableEntity, new()
+            => ContextHandler.AzureTableRepository(idHolder, connectionString, uniqueIdentifier);*/
     }
 }

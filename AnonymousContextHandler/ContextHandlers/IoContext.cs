@@ -17,6 +17,23 @@ namespace AnonymousContextHandler.ContextHandlers
         private string _uniqueIdentifier;
 
         public void SetIdParameter(Expression<Func<T, int>> idHolder) => IdHolder = idHolder;
+        private void Checknitilization()
+        {
+            if (_list == null)
+            {
+                try
+                {
+                    _list = File.ReadAllText(PathByType())
+                  .ParseJson<List<T>>() ?? new List<T>();
+                }
+                catch (Exception)
+                {
+
+                }
+
+
+            }
+        }
 
         public void Destroy()
         {
@@ -29,7 +46,7 @@ namespace AnonymousContextHandler.ContextHandlers
         public void SetPath(string path)
         {
             _path = path;
-            ReBind();
+            Checknitilization();
         }
 
         public void SetDbAccessReady(string connectionStringName)
@@ -48,11 +65,11 @@ namespace AnonymousContextHandler.ContextHandlers
         {
             CheckIdHolderInitialize();
 
-            var lastModel = List(query => query.Where(x=> true)).ToList().LastOrDefault();
+            var lastModel = List(query => query.Where(x => true)).ToList().LastOrDefault();
             var id = 0;
             if (lastModel == null)
             {
-                 id = 1;
+                id = 1;
             }
             else
             {
@@ -63,6 +80,8 @@ namespace AnonymousContextHandler.ContextHandlers
 
             model.SetPropertyValue(IdHolder, id);
             _list.Add(model);
+
+
             Save();
             return model;
         }
@@ -97,12 +116,13 @@ namespace AnonymousContextHandler.ContextHandlers
         public List<T> List(Func<IQueryable<T>, IQueryable<T>> query)
         {
             CheckIdHolderInitialize();
+            Checknitilization();
             return query(_list.AsQueryable())
                 .ToList();
         }
 
-        public void ReBind() => _list = File.ReadAllText(PathByType())
-            .ParseJson<List<T>>() ?? new List<T>();
+        public void ReBind() { }// _list = File.ReadAllText(PathByType())
+                                // .ParseJson<List<T>>() ?? new List<T>();
 
         public T Find(int id) => List(query => query.Where(x => IdHolder.Compile()
             .Invoke(x) == id))
@@ -114,7 +134,6 @@ namespace AnonymousContextHandler.ContextHandlers
                 throw new Exception(
                     "Please make use IoModelRepositoryWithDatabaseInteraction and provide valid connectionStringName");
 
-            ReBind();
             _list.ForEach(record =>
             {
                 record.SetPropertyValue(IdHolder, 0);
@@ -128,7 +147,6 @@ namespace AnonymousContextHandler.ContextHandlers
                 throw new Exception(
                     "Please make use IoModelRepositoryWithDatabaseInteraction and provide valid connectionStringName");
 
-            ReBind();
             model.SetPropertyValue(fieldToSaveLogs, _list.ToJson());
             model.SetPropertyValue(IdHolder, 0);
             _modelRepository.Add(model);
@@ -136,8 +154,12 @@ namespace AnonymousContextHandler.ContextHandlers
 
         private void Save()
         {
-            File.WriteAllText(PathByType(), _list.ToJson());
-            ReBind();
+            try
+            {
+                File.WriteAllText(PathByType(), _list.ToJson());
+            }
+            catch (Exception) { }
+
         }
 
         private void CheckIdHolderInitialize()
@@ -157,10 +179,9 @@ namespace AnonymousContextHandler.ContextHandlers
             if (!Directory.Exists(_path))
                 Directory.CreateDirectory(_path);
 
-            var filePath = string.Format("{0}{1}-{2}.txt", _path, typeof (T).Name, _uniqueIdentifier);
+            var filePath = string.Format("{0}{1}-{2}.txt", _path, typeof(T).Name, _uniqueIdentifier);
             if (!File.Exists(filePath))
-                File.Create(filePath)
-                    .Close();
+                File.Create(filePath).Close();
             return filePath;
         }
     }
